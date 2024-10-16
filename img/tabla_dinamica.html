@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Array en Tabla</title>
+</head>
+<body>
+    <h1>Elementos del Array en una Tabla</h1>
+    <table id="tablaArray" border="1">
+        <thead>
+            <tr>
+                <th>Índice</th>
+                <th>Elemento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Las filas se agregarán aquí dinámicamente -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+    <script>
+// Ejemplo de array
+let elementos = ["manzana", "banana", "cereza", "kiwi", "naranja"];
+
+// Obtener referencia a la tabla
+let tabla = document.getElementById("tablaArray").getElementsByTagName('tbody')[0];
+
+// Recorrer el array y crear filas
+elementos.forEach((elemento, indice) => {
+    // Crear una nueva fila
+    let nuevaFila = tabla.insertRow();
+
+    // Crear celdas para el índice y el elemento
+    let celdaIndice = nuevaFila.insertCell(0);
+    let celdaElemento = nuevaFila.insertCell(1);
+
+    // Asignar valores a las celdas
+    celdaIndice.textContent = indice;
+    celdaElemento.textContent = elemento;
+});
+</script>
+</body>
+</html>

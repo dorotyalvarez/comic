@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zoombie Book - Checkout</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo.svg.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fontawesome.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/zombi.png" alt="img">
+            <h2 class="company-name">Zoombie Book</h2>
+        </div>
+        <nav class="navbar">
+            <a href="index.html"><i class="fa-solid fa-house-user"></i> Home</a>
+            <a href="comics.html"><i class="fa-solid fa-book"></i> Comics</a>
+            <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mt-5">
+            <h1>Carrito de Compras</h1>
+            <ul id="checkout-items" class="list-group mb-3">
+                <!-- Aquí se mostrarán los cómics en el carrito -->
+            </ul>
+            <div id="checkout-total" class="mb-3">Total: $0.00</div>
+            <button class="btn btn-success" onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+    </main>
+
+    <footer class="d-flex justify-content-center mt-5">
+        <div class="d-flex justify-content-center align-items-center">
+            <label>Electiva profesional 2024-1 ©️Will Duran</label>
+        </div>
+    </footer>
+
+    <script src="js/checkout.js"></script>
+</body>
+
+</html>
